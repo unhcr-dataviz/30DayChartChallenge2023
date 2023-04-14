@@ -2,16 +2,19 @@
 
 UNHCR contributions to [#30DayChartChallenge](https://twitter.com/30DayChartChall) in April 2023.
 
-**Day 05 | Slope:**<br>![](05_slope/05_slope.png)
+**Day 05 | slope:**
 
-1. Week 1 comparisons:
-    * Tue 4 Apr - historical
-    * Wed 5 Apr - Slope > comparison between 2 point in time of top 10 refugee coo
-1. Week 2 distribution:
-    * Tue 11 Apr - circular > half-bubble male vs female, circular like the DVP
-1. Week 3 timeseries:
-    * Thu 20 - correlation > Connected scatterplot dataset???
-    * Fri 21 - down/upwards
-1. Week 4 uncertainties:
-    * Tue 25 - global change
-    * Fri 28 - trends > new displacement vs solutions for REF
+![](05_slope/05_slope.png)
+
+**Day 11 | circular:**
+
+![](11_circular/11_circular.png)
+
+**Day 21 | down/upwards:**
+
+<> ![](21_downupwards/21_downupwards.png)
+
+**Day 28 | trend:**
+
+<> ![](28_trend/28_trend.png)
+
