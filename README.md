@@ -2,7 +2,7 @@
 
 UNHCR contributions to [#30DayChartChallenge](https://twitter.com/30DayChartChall) in April 2023.
 
-**Potential participation dates:**
+**Day 05 | Slope:**<br>![](05_slope/05_slope.png)
 
 1. Week 1 comparisons:
     * Tue 4 Apr - historical

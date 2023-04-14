@@ -4,7 +4,7 @@ library(circlize)
 
 # load data
 pop_2022 <-
-  readr::read_csv(here::here("11_circular", "population.csv"),
+  readr::read_csv(here::here("data", "ref_pop_2022.csv"),
                 skip = 14) |>
   janitor::clean_names() |>
   rename(coo_name = country_of_origin,
@@ -18,7 +18,7 @@ pop_2022 <-
 
 
 region_hcr <-
-  readr::read_csv(here::here("11_circular", "wrl_cntry_data_t_unhcr.csv")) |>
+  readr::read_csv(here::here("data", "wrl_cntry_data_t_unhcr.csv")) |>
   select(iso3, region_pcode) |>
   mutate(region_pcode = if_else(region_pcode == "RBEHAGL" |
                                   region_pcode == "RBSA" |
@@ -68,6 +68,7 @@ chordDiagram(pop_from,
              transparency = 0.5,
              directional = 1,
              link.arr.type = "big.arrow",
+             link.arr.length = 0.05,
              link.sort = TRUE,
              annotationTrack = c("name", "grid"),
              annotationTrackHeight = c(0.05, 0.025),
