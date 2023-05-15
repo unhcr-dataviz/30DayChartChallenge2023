@@ -44,4 +44,3 @@ ggplot() +
 
 ggsave("solution.svg", device = svglite,
        width = 16, height = 9)
-
