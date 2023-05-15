@@ -5,6 +5,7 @@
 
 library(tidyverse)
 library(ggtext)
+library(svglite)
 
 
 
@@ -77,5 +78,5 @@ df_pop |>
 
 # save --------------------------------------------------------------------
 
-ggsave("", device = svglite,
+ggsave("trends.svg", device = svglite,
        width = 16, height = 9)
