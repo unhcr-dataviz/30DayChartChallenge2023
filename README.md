@@ -14,7 +14,3 @@ UNHCR contributions to [#30DayChartChallenge](https://twitter.com/30DayChartChal
 
 ![](21_downupwards/21_downupwards.png)
 
-**Day 28 | trend:**
-
-![](28_trend/28_trend.png)
-

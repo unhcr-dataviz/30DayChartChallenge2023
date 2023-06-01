@@ -77,14 +77,14 @@ plot <-
 
 # save --------------------------------------------------------------------
 
-path <- here::here("21_downupwards")
+path <- here::here("21_downupwards", "/")
 
 # base plot
-ggsave(paste0(path, "/plot.png"), plot = plot, device = agg_png, dpi = 300,
+ggsave(paste0(path, "plot.png"), plot = plot, device = agg_png, dpi = 300,
        width = 2400, height = 1350, units = "px")
 
 # load logo and chart
-chart <- image_read(paste0(path, "/plot.png"))
+chart <- image_read(paste0(path, "plot.png"))
 logo <- image_read_svg("https://raw.githubusercontent.com/vidonne/unhcrdesign/master/inst/resources/logo/unhcr_logo_blue.svg",
                        height = 100)
 
@@ -92,4 +92,4 @@ logo <- image_read_svg("https://raw.githubusercontent.com/vidonne/unhcrdesign/ma
 plot_wlogo <- chart |>
   image_composite(logo, offset = "+1930+1200")
 
-image_write(plot_wlogo, path = paste0(path, "/21_downupwards.png"), format = "png")
+image_write(plot_wlogo, path = paste0(path, "21_downupwards.png"), format = "png")
