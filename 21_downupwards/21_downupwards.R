@@ -17,7 +17,7 @@ showtext::showtext_opts(dpi = 300)
 
 # load data ---------------------------------------------------------------
 
-df_raw <- readr::read_csv(here::here("data", "ref_new_vs_solution.csv")) |>
+df_raw <- readr::read_csv("https://raw.githubusercontent.com/unhcr-dataviz/30DayChartChallenge2023/main/21_downupwards/ref_new_vs_solution.csv") |>
   janitor::clean_names()
 
 
@@ -57,7 +57,8 @@ plot <-
              aes(x = year, ymin = new, ymax = sol, fill = new < sol),
              alpha = 0.3) +
   geom_line(data = df_long,
-            aes(x = year, y = value, color = name)) +
+            aes(x = year, y = value, color = name),
+            linewidth = .75) +
   geom_textbox(data = note, aes(x = x, y = y, label = label),
                hjust = 0, vjust = 1, width = grid::unit(0.25, "npc"),
                fill = NA, box.color = NA, size = 10/2.84) +
